@@ -1,0 +1,390 @@
+<!-- Declaração de que o documento é em HTML, marcando
+o início do código -->
+<!DOCTYPE html>
+<!-- Tag html lang: especifica o idioma da página-->
+<html lang="pt-BR">
+<!-- Tag head: não é visualizado no corpo (body) da página,
+armazena os metadados -->
+
+<head>
+  <!-- Metadado UTF-8: considera um conjunto de caracteres presente no idioma
+    Português (acentuação, por exemplo)-->
+  <meta charset="UTF-8" />
+  <!-- Metadado que possibilita a visualização em navegador de dispositivo móvel,
+    mantendo a escala -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tag title: título da guia -->
+  <title>Laura Lopes</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Referencia o arquivo CSS, colocar na tag head -->
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<!-- Tag body: Definir o corpo do documento (conteúdo a ser visualizado) -->
+
+<body>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+  </style>
+
+  <!-- Cabeçalho da página -->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+  </style>
+
+  <!--Inicio do menu-->
+
+  <!-- Tag nav: Cria um seção de menu (navigation) -->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navColor" id="navbarNav">
+        <ul class="navbar-nav" id="menu">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Início</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobremim">Sobre mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">Soluções em T.I</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+
+    <!-- Divisão em parte menor, dentro de uma seção, identificada pela
+        palavra "apresentação" -->
+    <div class="apresentacao">
+
+      <!-- Tag img: inserir imagem na página -->
+      <!-- width significa largura -->
+      <!-- height significa altura -->
+
+      <div class="left">
+        <img src="img/purple.png" width="50%" height="auto" id="imagem" />
+      </div>
+
+      <div class="right">
+        <h1>Soluções tecnólogicas em</h1>
+        <h1>redes de computadores e desenvolvimento web</h1>
+
+        <div>
+          <a href="#contato">
+            <button class="btn btnContact">Entre em contato</button>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Tags h1 ao h6: níveis de importância no corpo do site-->
+
+    <!--Fim da seção apresentação-->
+  </header>
+
+  <!-- Início da seção sobre mim -->
+  <section id="sobremim">
+
+    <h3>Sobre mim</h3>
+    <div class="containerSobreMim">
+
+      <div class="left">
+        <h2>Laura Lopes</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae quae iusto officia quasi.
+          Dignissimos
+          itaque iusto delectus voluptatibus amet voluptatum facere. Eos quasi neque cupiditate deserunt
+        </p>
+      </div>
+
+      <div class="right">
+
+        <div class="socialMedia">
+
+          <div>
+            <a href="https://api.whatsapp.com/send?phone=5511994608910" target="_blank">
+              <img src="img/redesSociais/whatsapp.png">
+          </div>
+          </a>
+
+
+
+          <div>
+            <a href="https://github.com/lauralopess" target="_blank">
+              <img src="img/redesSociais/github.png">
+          </div>
+          </a>
+
+
+          <div>
+            <a href="https://www.linkedin.com/in/laura-lopes-a2879422b/" target="_blank">
+              <img src="img/redesSociais/linkedin.png">
+          </div>
+          </a>
+
+
+
+          <div>
+            <a href="mailto:lauralopessts@gmail.com">
+              <img src="img/redesSociais/email.png">
+          </div>
+          </a>
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Fim da seção sobre mim -->
+
+
+  <section id="servicos">
+
+    <!-- Inicio da seção de seviços em redes de computadores -->
+    <h3>Assistência em redes de computadores</h3>
+
+    <div class="containerServicos">
+
+      <div class="itemServico1">
+        <img src="img/montagemPC/96px.png" />
+        <h2>Montagem e manutenção de computadores</h2>
+      </div>
+
+      <div class="itemServico2">
+        <img src="img/redes/96px.png" />
+        <h2>Implementação e configuração de redes</h2>
+      </div>
+
+      <div class="itemServico3">
+        <img src="img/configuracaoSO/96px.png" />
+        <h2>Instalação e configuração de sistemas operacionais</h2>
+      </div>
+
+      <div class="itemServico4">
+        <img src="img/SegurancaInformacao_64px.png" />
+        <h2>Segurança da informação e backup</h2>
+      </div>
+
+    </div>
+    <!-- Fim da seção de serviços em redes de computadores -->
+
+    <!-- Inicio da seção de serviços em desenvolvimento -->
+    <h3>Desenvolvimento e implementação de aplicativos</h3>
+
+    <div class="containerServicos">
+
+      <div class="itemServico5">
+        <img src="img/prototipacao/96px.png" />
+        <h2>Prototipação de</h2>
+        <h2>aplicações</h2>
+      </div>
+
+      <div class="itemServico6">
+        <img src="img/bancoDeDados/96px.png" />
+        <h2>Estruturação e administração de banco de dados</h2>
+      </div>
+
+      <div class="itemServico7">
+        <img src="img/sistemaDesktop/96px.png" />
+        <h2>Desenvolvimento de sistemas Desktop</h2>
+      </div>
+
+      <div class="itemServico8">
+        <img src="img/desenvolverSite/96px.png" />
+        <h2>Desenvolvimento e hospedagem de site</h2>
+      </div>
+    </div>
+    <!-- Fim da seção de serviços em desenvolvimento -->
+
+  </section>
+
+
+  <section id="certificacoes">
+    <h3 class="titleCertHab">Certificações e habilidades</h3>
+    <div class="containerCertificacoes">
+
+
+      <div class="textCertificacoes">
+        <h3 class="tittleCertHab titleCerti">Certificações</h3>
+
+        <li>Assistente de Suporte e Manuntenção de Computadores</li>
+        <li>Assistente de Operação de Redes de Computadores</li>
+        <li>IT Essentials</li>
+        <li>Cybersecurity Essentials</li>
+        <li>Networking Essentials</li>
+        <li>NDG Linux Unhatched</li>
+      </div>
+
+      <div class="habilidades">
+        <h3 class="titleHab">Habilidades</h3>
+
+        <div class="habIco">
+
+          <div>
+            <img src="img/habIco/html.png">
+          </div>
+
+          <div>
+            <img src="img/habIco/css.png">
+          </div>
+
+          <div>
+            <img src="img/habIco/js.png ">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Inicio da seção contato -->
+  <section id="contato">
+
+    <div class="containerContato">
+
+      <form name="formularioContato">
+
+        <h2>Entre em contato</h2>
+
+        <div class="displayContato">
+
+          <div class="dados">
+            <!-- Tag label: rótulo do input -->
+            <label for="nome">Nome: </label>
+            <!-- Tag input: entrada de dados -->
+            <!-- Atributo required é um campo obrigatório -->
+            <input type="text" id="idNome" placeholder="Digite seu nome" required="required" name="nome" />
+            <br>
+
+            <label for="tel">Celular: </label>
+            <input type="tel" id="idFone" placeholder="(99) 91234-5678" name="tel" />
+            <br>
+
+            <label for="email">E-mail: </label>
+            <input type="email" id="idEmail" placeholder="seuemail@email.com" name="email" />
+
+          </div>
+
+          <div class="mensagem">
+            <label>Deixe sua mensagem: </label>
+            <textarea rows="5" cols="33"></textarea>
+            <br>
+
+            <input type="submit" class="enviar" onclick="enviarMensagem();" value="Enviar mensagem" />
+          </div>
+
+          <div class="mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8063692462224!2d-46.70641572466709!3d-23.64710447874104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50f8ac76dfdb%3A0xc160a87f059ec93d!2sSenac%20Largo%20Treze!5e0!3m2!1spt-BR!2sbr!4v1695048250688!5m2!1spt-BR!2sbr"
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- Fim da seção contato
+    Tag hr: cria uma linha 
+    <hr> 
+    <h3>  Subtítulo 3 </h3>
+    <h4>  Subtítulo 4 </h4>
+    <h5>  Subtítulo 5 </h5>
+    <h6>  Subtítulo 6 </h6>
+    Tag p: Representar o parágrafo -->
+
+
+  <!-- Tag footer: seção para identificar o rodapé -->
+
+  <!-- Inicio do rodapé-->
+  <footer>
+
+    <!-- Grid container -->
+
+    <div class="containerMenu">
+
+      <!-- Section: Links -->
+      <section class="menu">
+
+        <a href="#">Início</a>
+        <a href="#sobremim">Sobre mim</a>
+        <a href="#servicos">Soluções em T.I</a>
+        <a href="#contato">Contato</a>
+
+      </section>
+      <!-- Section: Links -->
+
+      <section class="text-center mb-5">
+
+        <a href="https://api.whatsapp.com/send?phone=5511994608910" target="_blank" style="text-decoration: none;"
+          class="text-white me-4">
+          <i class="fab fa-whatsapp" style="color: #f8c1ff;"></i>
+        </a>
+
+        <a href="https://github.com/lauralopess" target="_blank" style="text-decoration: none;" class="text-white me-4">
+          <i class="fab fa-github" style="color: #f8c1ff;"></i>
+
+        </a>
+
+        <a href="https://www.linkedin.com/in/laura-lopes-a2879422b/" target="_blank" style="text-decoration: none;"
+          class="text-white me-4">
+          <i class="fab fa-linkedin" style="color: #f8c1ff;"></i>
+        </a>
+
+        <a href="mailto:lauralopessts@gmail.com" target="_blank" style="text-decoration: none;" class="text-white me-4">
+          <i class="fa-solid fa-envelope" style="color: #f8c1ff;"></i>
+        </a>
+
+      </section>
+
+      <hr class="my-5" />
+    </div>
+    <!-- Grid container -->
+
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+      © 2023 Copyright: Desenvolvido por Laura Lopes
+    </div>
+    <!-- Copyright -->
+    </div>
+    <!-- End of .container -->
+
+    <!-- Fim do rodapé -->
+
+    <script src="https://kit.fontawesome.com/979769342e.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
